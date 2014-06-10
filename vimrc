@@ -51,8 +51,8 @@ map <leader>b :buffer
 "Keymaps for vim fugitive
 map <leader>gs :Gstatus<CR>
 map <leader>gc :Gcommit<CR>
-map <leader>gp :Git pull origin
-map <leader>gu :Git push origin 
+map <leader>gp :Git pull origin<CR>
+map <leader>gu :Git push origin<CR>
 map <leader>gd :Gdiff<CR>
 
 "Remap yiw and paste inner word
