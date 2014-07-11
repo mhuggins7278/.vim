@@ -14,6 +14,9 @@ set t_fs=
 "Don't include line #'s in copy
 set mouse=a
 
+"Set relative line numbers
+set rnu
+
 "Allow mouse scroll wheel to scroll up & down ITERM2 only
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
@@ -24,8 +27,6 @@ set tabstop=2
 set shiftwidth=2
 set et
 
-"turn on line numbers
-set nu
 "turn off line wrapping
 set nowrap
 
@@ -57,7 +58,10 @@ map <leader>gd :Gdiff<CR>
 
 "Remap yiw and paste inner word
 map <leader>c yiw
-map <leader>v viwp
+map <leader>v viw"0p
+
+"in Visual Mode replace highleted text
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
 "Quick escape key in insert mode
 imap jj <esc>
